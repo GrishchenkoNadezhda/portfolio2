@@ -22,6 +22,21 @@ window.onscroll = () => {
 
 
 /*========== dark light mode ==========*/
+ let darkModeIcon = document.querySelector('#darkMode-icon');
 
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode')
+}; 
+
+/* let page = document.querySelector('.page');
+let themeButton = document.querySelector('.theme-button');
+
+themeButton.onclick = function() {
+  console.log('Кнопка нажата!');
+  page.classList.remove('bx-sun');
+  page.classList.add('dark-mode');
+};
+ */
 
 /*========== scroll reveal ==========*/
