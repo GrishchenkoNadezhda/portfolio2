@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -28,6 +32,7 @@
         <a href="#contact" style="--i:16;">Contact</a>
       </nav>
       <div class="bx bx-moon" id="darkMode-icon"></div>
+      <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     <section class="home" id="home">
       <div class="home-content">
@@ -165,18 +170,59 @@
       <h2 class="heading">Valuable <span>Testimonial</span></h2>
       <div class="testimonial-wrapper">
         <div class="testimonial">
-          <div class="testimonial-box">
-            <div class="testimonial-content">
-              <div class="testimonial-slide">
+          <div class="testimonial-box mySwiper">
+            <div class="testimonial-content swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
+                <img src="img/testimonial1.jpg" alt="">
+                <h3>Jackson Levi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero eius assumenda quis, maiores dicta distinctio ipsam cumque mollitia enim quae consequuntur consectetur officiis sint inventore, culpa praesentium nulla accusantium.</p>
+              </div>
+            
+              <div class="testimonial-slide swiper-slide">
+                <img src="img/testimonial1.jpg" alt="">
+                <h3>Jackson Levi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero eius assumenda quis, maiores dicta distinctio ipsam cumque mollitia enim quae consequuntur consectetur officiis sint inventore, culpa praesentium nulla accusantium.</p>
+              </div>
+            
+              <div class="testimonial-slide swiper-slide">
                 <img src="img/testimonial1.jpg" alt="">
                 <h3>Jackson Levi</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero eius assumenda quis, maiores dicta distinctio ipsam cumque mollitia enim quae consequuntur consectetur officiis sint inventore, culpa praesentium nulla accusantium.</p>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+      <section class="contact" id="contact">
+        <h2 class="heading">Мои <span>контакты!</span></h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <input type="submit" value="Sent Massage" class="btn">
+        </form>
+      </section>
     </div>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyring &copy; 2023 by Codehal | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
